@@ -1,0 +1,153 @@
+
+/*Todo lo que se escribe abajo pisa a lo de arriba*/
+/* Se los puede llamar por clase o por id, pero solo puede haber un id por elemento, en cambio puede haber clases*/
+/* El !important pisa todos los estilos dentro de una clase.
+En este caso por ejemplo
+tengo background y background-color. El segundo es mas importante y para que el primero gane le pongo eso.
+
+Para llamar 2 clases en un mismo elemento es class="clase1 clase2 clase3"
+
+color picker mybrandnewlogo
+
+etiqueta1 mayor li y digo la jerarquia
+*/
+/* Boddy adaptation*/
+
+
+/*  General */
+
+/* Fuente para lema */
+@import url('https://fonts.googleapis.com/css2?family=Birthstone&family=Italianno&family=Oxygen:wght@300&family=Source+Serif+Pro:wght@600&display=swap');
+/* Para parrafos */
+
+
+h3 {
+    font-family: 'Source Serif Pro', serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: $general-background-page;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Oxygen', sans-serif;
+    
+}
+main {
+    
+    color: $general-text-color;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* Modificando el navbar de boosttrap*/
+nav {
+    text-align: center;
+    padding-bottom: 1%;
+    padding-top: 0.5%;
+    position: -webkit-sticky;
+    background-color: white;
+    top: 0;
+    font-size: 0.7em;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    a {
+        color: $general-text-color;
+        top:0;
+        transition: all ease .2s;
+        position: relative;
+        transition: linear all .2s;
+
+        &:hover {
+            top: -5px;
+    
+            font-size: 1.05em;
+        }
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .container {
+        display: grid;
+    
+        grid-auto-rows: auto;
+    }
+    
+    .product_card {
+        margin: 1.5em;
+    }
+    }
+
+/* Footer y elementos estáticos */
+
+
+#whatsapp {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 0.9%;
+    margin-right: 0.9%;
+    color: rgb(37, 211, 102);
+    transition: all ease .2s;
+}
+#whatsapp:hover {
+    cursor: pointer;
+    scale: 1.05;
+}
+
+#instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block; ;
+    position: fixed;
+    bottom: 3em;
+    right: 0;
+    margin-bottom: 0.9%;
+    margin-right: 0.9%;
+    transition: all ease .2s;
+}
+#instagram:hover {
+    cursor: pointer;
+    transform: scale(1.05)
+}
+#footer{
+    padding-top: 2%;
+    padding-bottom: 1%;
+    background-color: $general-background-footer;
+    font-size: 11px;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    
+    top: auto;
+    bottom: 2%;
+    width: 100%;
+    
+    
+
+}
+
+#footer p {
+    display: block;
+}
+
+.footerText{
+    text-align: center;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+}
+.company_motto {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 10px;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Hoja de estilo-->
+    <script src="https://kit.fontawesome.com/25607fcacf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style/style.css">
+    <title>Runas Joyas</title>
+
+</head>
+<body>
+    <!--Cabecera de la página. contiene tres elementos: logo, redes y barra de navegación-->
+    <header id="header"> <!-- Uso id ya que el header, así como el footer son únicos-->
+        <img src="images/logo.png" alt="Logo" width="100" height="100">
+        <p class="companyMotto">Lema de la empresa</p>
+
+    </header>
+    <nav> 
+        <ul class="navList">
+            <li><a href="index.html" class="navListAActive"> Inicio</a></li>
+            <li><a href="nosotras.html"> Nosotras</a></li>
+            <li class="dropdown"><a href="productos.html" >Productos</a>
+
+            </li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="promociones.html">En promoción</a></li>
+        </ul>
+    </nav>
+    <!-- En main se encuentran las tarjetas con  los productos más nuevos o destacados -->
+    <main>
+        
+        <!-- Cada sección es un producto y contiene cuatro elementos: foto, nombre, descripcion y precio-->
+        <section class="feed"></section><!--Puede que se decida que haya otra seccion con otro tipo de contenido, pero los contenidos tipo feed deben ser todos iguales-->
+            <!--Producto 1-->
+            <!-- <article class="left_sided_product">
+                <div class="product_pic"><img src="images/products/producto1.jpg" alt="Producto 1"></div>
+                
+                <h3 class="product_name">Nombre del producto</h3>
+                <p class="product_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore modi sapiente vitae iusto ratione iure error. Esse iste eaque consectetur explicabo reiciendis. Est, voluptatum ea.</p>
+            </article> -->
+            <!--Producto 2-->
+            <!-- <article class="right_sided_product">
+                <img src="images/products/producto2.jpg" alt="Producto 2">
+                <h3 class="product_name">Nombre del producto</h3>
+                <p class="product_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore modi sapiente vitae iusto ratione iure error. Esse iste eaque consectetur explicabo reiciendis. Est, voluptatum ea.</p>
+            </article> -->
+            <!-- Contenedor de las tarjetas de los productos -->
+
+            <!-- PROBLEMA A RESOLVER: LA TARJETA SE SUPERPONE AL ELEMENTO FIJO. -->
+            <div class="container">
+                <!-- Productos en si -->
+            <div class="productCard">
+                <!-- Se asignan las fotos desde css -->
+                <div class="productImg imgOne"></div>
+                <!-- Texto de cada tarjeta -->
+                <div class="productText">
+                    <h3>Producto 1</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt excepturi totam ducimus, nemo tenetur, quibusdam accusamus neque deserunt aliquid perferendis.</p>
+                </div>
+                <div class="productCart">
+                    <button>Precio: 1200</button>
+                </div>
+            </div>
+            
+            <div class="productCard">
+                <!-- Cuando en una class ponemos un espacio, llamamos a dos -->
+                <div class="productImg imgTwo"></div>
+                <div class="productText">
+                    <h3>Producto 2</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, deserunt maxime? Earum eveniet suscipit ad! Quidem recusandae minima est minus nobis accusamus.</p>
+                </div>
+                <div class="productCart">
+                    <button>Precio: 1200</button>
+                </div>
+            </div>
+            
+            <div class="productCard">
+                <div class="productImg imgThree"></div>
+                <div class="productText">
+                    <h3>Producto 3</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, laborum. Non maxime corrupti illo necessitatibus error vitae numquam perspiciatis culpa.</p>
+                </div>
+                <div class="productCart">
+                    <button>Precio: 1200</button>
+                </div>
+            </div> 
+            <!-- fin tarjeta -->
+            </div>
+            <!-- fin flex -->
+        </section>
+        
+    </main>
+    <footer id="footer">
+        <!--El footer contiene tres elementos: los metodos de pago, redes nuevanmente y el boton de whatsapp-->
+
+        <img src="https://imgmp.mlstatic.com/org-img/banners/ar/medios/online/125X125.jpg" 
+        title="Mercado Pago - Medios de pago" alt="Mercado Pago - Medios de pago" 
+        width="125" height="125"/> 
+        
+        <i class="fab fa-whatsapp fa-3x" id="whatsapp"></i>
+        <a href="http://instagram.com/runa_joyaslr/" id="instagram" target="_blank"><i class="fab fa-instagram fa-3x" ></i></a>
+
+    </footer>
+</body>
+</html>

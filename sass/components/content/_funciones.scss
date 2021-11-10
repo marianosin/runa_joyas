@@ -1,0 +1,12 @@
+@mixin contactFormInputText($display, $margin-top,   $height, $background-color) {
+    display: $display;
+    margin-top: $margin-top;
+    border-bottom: 2.5px solid #F4C7AB ;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    width: 100%;
+    height: $height;
+    background-color: $background-color;
+    transition: all linear .2s;
+}

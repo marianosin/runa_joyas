@@ -1,0 +1,152 @@
+.gallery {
+    width: 70%;
+    display: flex;
+    margin-top: 4%;
+    margin-bottom: 5%;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 0%;
+    &__ImageBox {
+        position: relative;
+        margin: 2%;
+        background-color: blue;
+        border-radius: $border-radius-img;
+        height: 35vh;
+        width: 35vh;
+        display: flex;
+        flex-direction: column; 
+        
+        
+        /* Recordar que es el contenedor, este es el que establece que sea fluido */
+        justify-content: center;
+        &:hover {
+            height: 30%;
+            opacity: 100%;
+        }
+        &__Image {
+            display: block;
+            height: 35vh;
+            max-width: 35vh;
+            transition: .5s ease;
+            border-radius: $border-radius-img;
+            
+            &__overlay {
+                position: absolute;
+                justify-content: center;
+                padding-left: 1.9em;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background-color: $galeria-overlay-background-color;
+                opacity: 0%;
+                border-radius: $border-radius-overlay;
+                overflow: hidden;
+                width: auto;
+                height: 80%;
+                transition: .5s ease;
+                
+            }
+            &__Text {
+                color: white;
+                border-radius: 0 0 20% 20%;
+                position: absolute;
+                top: 50%;
+                
+                -webkit-transform: translate(-90%, -90%);
+                -ms-transform: translate(-90%, -90%);
+                transform: translate(-90%, -90%);
+                text-align: left;
+            }
+        }
+// Importa el orden en el que se ponga este anidad, al cambiar overlay e images empezó a funcionar
+        &:hover &__Image &__Image__overlay {
+            height: 40%;
+            opacity: 100%;
+        }
+    }
+}
+
+
+
+/* #contenedor de imagen.
+Recordar que cada elemento debe tener su contenedor*/
+
+
+
+
+
+
+
+
+/* Imagenes en si */
+.galleryImage1 {
+    background-size:cover;
+    background-position: center;
+    background-image: url('../images/products/producto1.jpg');
+}
+
+.galleryImage2 {
+    background-size:cover;
+    background-position: center;
+    background-image: url('../images/products/producto2.jpg');
+}
+
+.galleryImage3 {
+    background-size:cover;
+    background-position: center;
+    background-image: url('../images/products/1632688062518.jpg');
+}
+
+.galleryImage4 {
+    background-size:cover;
+    background-position: center;
+    background-image: url('../images/products/1632688062600.jpg');
+}
+
+.galleryImage5 {
+    background-size:cover;
+    background-position: center;
+    background-image: url('../images/products/1632688062872.jpg');
+}
+
+.galleryImage6 {
+    background-size:cover;
+    background-position: center;
+    background-image: url('../images/products/1632688062986.jpg');
+}
+
+.galleryImage7 {
+    background-size:cover;
+    background-position: center;
+    background-image: url('../images/products/1632688063181.jpg');
+}
+
+.galleryImage8 {
+    background-size:cover;
+    background-position: center;
+    background-image: url('../images/products/producto1.jpg');
+}
+
+.galleryImage9 {
+    background-size:cover;
+    background-position: center;
+    background-image: url('../images/products/IMG_20210827_114313.jpg');
+}
+
+.galleryImage10 {
+    background-size:cover;
+    background-position: center;
+    background-image: url('../images/products/IMG_20210831_132324.jpg');
+}
+
+.galleryImage11 {
+    background-size:cover;
+    background-position: center;
+    background-image: url('../images/products/IMG_20210906_125515.jpg');
+}
+
+.galleryImage12 {
+    background-size:cover;
+    background-position: center;
+    background-image: url('../images/products/IMG_20210827_165022.jpg');
+}

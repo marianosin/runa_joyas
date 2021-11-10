@@ -1,0 +1,119 @@
+.container {
+    display: flex;
+    margin-top: 4%;
+    margin-bottom: 5%;
+    justify-content: center;
+}
+
+/* PRODUCT CARD */
+/* Contenedor */
+.product_card {
+    background-color: #DEEDF0;
+    border-radius: 10px;
+    color: #2f3640;
+    margin: 0 2em;
+    transition: all linear .2s;
+    width: 250px;
+    display: flex;
+    flex-direction: column; 
+    /* Recordar que es el contenedor, este es el que establece que sea fluido */
+    justify-content: space-between;
+}
+/* Al ponerlas seguidas es como que se las llama a la vez */
+.product_card:hover,
+.product_card:active {
+    
+    transform: scale(1.05);
+}
+
+.product_img {
+    border-radius: 0px 0px 0 0;
+    height: 150px;
+    max-width: 100%;
+}
+
+.img_one {
+    background-image: url('../images/products/producto1.jpg');
+}
+
+.img_two {
+    background-image: url('../images/products/producto2.jpg');
+}
+
+.img_three {
+    background-image: url('../images/products/producto1.jpg');
+}
+
+.img_one,
+.img_two,
+.img_three {
+    background-size:cover;
+    background-position: center;
+}
+
+.product_text {
+    padding: 1em;
+    text-align: center;
+}
+
+.product_cart button{
+    border: 0;
+    border-radius: 0 0 10px 10px;
+    
+    cursor: pointer;
+    font-family: inherit;
+    padding: 1em;
+    text-transform: uppercase;
+    transition: all linear .3s;
+    width: 100%;
+}
+
+
+
+/* color */
+/* first chil implica primer elemento o etiqueta que se nombre como h3*/
+
+/* Es los colores de la primera tarjeta */
+.product_card:first-child h3 {
+    color: #B2B8A3;
+}
+
+/* Los colores de la segunda tarjeta */
+.product_card:nth-child(2) h3 {
+    color: #B2B8A3;
+}
+
+/* lod olores de la tercera tajeta */
+.product_card:last-child h3 {
+    color: #B2B8A3;
+}
+
+.product_card:first-child button {
+    cursor: default;
+    max-width: 100%;
+    background-color: #F4C7AB;
+}
+
+.product_card:nth-child(2) button {
+    cursor: default;
+    max-width: 100%;
+    background-color: #F4C7AB;
+}
+.product_card:nth-child(3) button {
+    cursor: default;
+    max-width: 100%;
+    background-color: #F4C7AB;
+}
+/* media queries */
+/* Se activa con la aparición del dispositivo, facilita la adaptabilidad */
+@media screen and (max-width: 860px) {
+    .container {
+        display: grid;
+    
+        grid-auto-rows: auto;
+    }
+    
+    .product_card {
+        margin: 1.5em;
+    }
+    }

@@ -1,0 +1,462 @@
+@charset "UTF-8";
+/*GEneral*/
+/*index*/
+/*Nosotras*/
+/*Galeria*/
+/*Promociones*/
+/*Contacto*/
+/*Todo lo que se escribe abajo pisa a lo de arriba*/
+/* Se los puede llamar por clase o por id, pero solo puede haber un id por elemento, en cambio puede haber clases*/
+/* El !important pisa todos los estilos dentro de una clase.
+En este caso por ejemplo
+tengo background y background-color. El segundo es mas importante y para que el primero gane le pongo eso.
+
+Para llamar 2 clases en un mismo elemento es class="clase1 clase2 clase3"
+
+color picker mybrandnewlogo
+
+etiqueta1 mayor li y digo la jerarquia
+*/
+/* Boddy adaptation*/
+/*  General */
+/* Fuente para lema */
+@import url("https://fonts.googleapis.com/css2?family=Birthstone&family=Italianno&family=Oxygen:wght@300&family=Source+Serif+Pro:wght@600&display=swap");
+/* Para parrafos */
+h3 {
+  font-family: 'Source Serif Pro', serif; }
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #1F1D36;
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Oxygen', sans-serif; }
+
+main {
+  color: white;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center; }
+
+/* Modificando el navbar de boosttrap*/
+nav {
+  text-align: center;
+  padding-bottom: 1%;
+  padding-top: 0.5%;
+  position: -webkit-sticky;
+  background-color: white;
+  top: 0;
+  font-size: 0.7em;
+  position: sticky;
+  top: 0;
+  z-index: 999; }
+  nav a {
+    color: white;
+    top: 0;
+    transition: all ease .2s;
+    position: relative;
+    transition: linear all .2s; }
+    nav a:hover {
+      top: -5px;
+      font-size: 1.05em; }
+
+@media screen and (max-width: 860px) {
+  .container {
+    display: grid;
+    grid-auto-rows: auto; }
+  .product_card {
+    margin: 1.5em; } }
+
+/* Footer y elementos estáticos */
+#whatsapp {
+  display: block;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 0.9%;
+  margin-right: 0.9%;
+  color: #25d366;
+  transition: all ease .2s; }
+
+#whatsapp:hover {
+  cursor: pointer;
+  scale: 1.05; }
+
+#instagram {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  position: fixed;
+  bottom: 3em;
+  right: 0;
+  margin-bottom: 0.9%;
+  margin-right: 0.9%;
+  transition: all ease .2s; }
+
+#instagram:hover {
+  cursor: pointer;
+  transform: scale(1.05); }
+
+#footer {
+  padding-top: 2%;
+  padding-bottom: 1%;
+  background-color: white;
+  font-size: 11px;
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  justify-content: center;
+  top: auto;
+  bottom: 2%;
+  width: 100%; }
+
+#footer p {
+  display: block; }
+
+.footerText {
+  text-align: center;
+  margin-top: 0.5%;
+  margin-bottom: 0.5%; }
+
+.company_motto {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 10px; }
+
+/* Contact */
+.contactForm {
+  background-color: rgba(134, 72, 121, 0.5);
+  width: 60%;
+  padding: 3%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: left; }
+
+.contactFormLabel {
+  font-family: "Oxygen", sans-serif;
+  font-size: 20;
+  align-items: center; }
+
+.contactFormInputText[type=text] {
+  display: inline;
+  margin-top: 10px;
+  border-bottom: 2.5px solid #F4C7AB;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  width: 100%;
+  height: 2em;
+  background-color: rgba(129, 129, 129, 0.08);
+  transition: all linear .2s; }
+
+.contactFormInputText:hover[type=text], .contactFormInputText:active[type=text], .contactFormInputText:focus[type=text] {
+  margin-top: 10px;
+  border-bottom: 2.5px solid #F4C7AB;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  height: 2em;
+  background-color: rgba(129, 129, 129, 0.2); }
+
+.contactFormInputText[type=email] {
+  display: inline;
+  margin-top: 10px;
+  border-bottom: 2.5px solid #F4C7AB;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  width: 100%;
+  height: 2em;
+  background-color: rgba(129, 129, 129, 0.08);
+  transition: all linear .2s; }
+
+.contactFormInputText:hover[type=email], .contactFormInputText:active[type=email], .contactFormInputText:focus[type=email] {
+  margin-top: 10px;
+  border-bottom: 2.5px solid #F4C7AB;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  height: 2em;
+  background-color: rgba(129, 129, 129, 0.2); }
+
+textarea {
+  display: inline;
+  margin-top: 10px;
+  border-bottom: 2.5px solid #F4C7AB;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  width: 100%;
+  height: 2em;
+  background-color: rgba(129, 129, 129, 0.08);
+  transition: all linear .2s; }
+
+textarea:hover, textarea:active, textarea:focus {
+  margin-top: 10px;
+  border-bottom: 2.5px solid #F4C7AB;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  height: 6em;
+  background-color: rgba(129, 129, 129, 0.2); }
+
+.checkboxInput[type="checkbox"] {
+  display: inline;
+  border: 1px solid blue;
+  background-color: rgba(129, 129, 129, 0.08);
+  transition: all linear .2s; }
+
+.checkboxInput:hover[type="checkbox"], .checkboxInput:active[type="checkbox"], .checkboxInput:focus[type="checkbox"] {
+  border-bottom: 2.5px solid #F4C7AB;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  background-color: rgba(129, 129, 129, 0.2); }
+
+.nameLastnameInput {
+  margin-bottom: 1%; }
+
+.buttonsArea {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  margin-top: 2%;
+  padding: 2%; }
+
+.buttonsArea input[type="reset"] {
+  border: 0;
+  background-color: #F4C7AB; }
+
+.buttonsArea input[type="submit"] {
+  border: 0;
+  background-color: #F4C7AB; }
+
+/* CSS */
+.button {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation; }
+
+.button:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px; }
+
+@media (min-width: 768px) {
+  .button {
+    padding: 0.25em 0.75em; } }
+
+.carouselSize {
+  /* width: 100vw; */
+  height: 100vh; }
+
+.aboutUsBox {
+  padding-top: 3%;
+  width: 60%;
+  font-size: 12px;
+  text-align: justify;
+  font-family: "Times New Roman", Times, serif; }
+
+.gallery {
+  width: 70%;
+  display: flex;
+  margin-top: 4%;
+  margin-bottom: 5%;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 0%; }
+  .gallery__ImageBox {
+    position: relative;
+    margin: 2%;
+    background-color: blue;
+    border-radius: 20px 20px 20px 20px;
+    height: 35vh;
+    width: 35vh;
+    display: flex;
+    flex-direction: column;
+    /* Recordar que es el contenedor, este es el que establece que sea fluido */
+    justify-content: center; }
+    .gallery__ImageBox:hover {
+      height: 30%;
+      opacity: 100%; }
+    .gallery__ImageBox__Image {
+      display: block;
+      height: 35vh;
+      max-width: 35vh;
+      transition: .5s ease;
+      border-radius: 20px 20px 20px 20px; }
+      .gallery__ImageBox__Image__overlay {
+        position: absolute;
+        justify-content: center;
+        padding-left: 1.9em;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(63, 51, 81, 0.6);
+        opacity: 0%;
+        border-radius: 0 0 20px 20px;
+        overflow: hidden;
+        width: auto;
+        height: 80%;
+        transition: .5s ease; }
+      .gallery__ImageBox__Image__Text {
+        color: white;
+        border-radius: 0 0 20% 20%;
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translate(-90%, -90%);
+        -ms-transform: translate(-90%, -90%);
+        transform: translate(-90%, -90%);
+        text-align: left; }
+    .gallery__ImageBox:hover .gallery__ImageBox__Image .gallery__ImageBox__Image__overlay {
+      height: 40%;
+      opacity: 100%; }
+
+/* #contenedor de imagen.
+Recordar que cada elemento debe tener su contenedor*/
+/* Imagenes en si */
+.galleryImage1 {
+  background-size: cover;
+  background-position: center;
+  background-image: url("../images/products/producto1.jpg"); }
+
+.galleryImage2 {
+  background-size: cover;
+  background-position: center;
+  background-image: url("../images/products/producto2.jpg"); }
+
+.galleryImage3 {
+  background-size: cover;
+  background-position: center;
+  background-image: url("../images/products/1632688062518.jpg"); }
+
+.galleryImage4 {
+  background-size: cover;
+  background-position: center;
+  background-image: url("../images/products/1632688062600.jpg"); }
+
+.galleryImage5 {
+  background-size: cover;
+  background-position: center;
+  background-image: url("../images/products/1632688062872.jpg"); }
+
+.galleryImage6 {
+  background-size: cover;
+  background-position: center;
+  background-image: url("../images/products/1632688062986.jpg"); }
+
+.galleryImage7 {
+  background-size: cover;
+  background-position: center;
+  background-image: url("../images/products/1632688063181.jpg"); }
+
+.galleryImage8 {
+  background-size: cover;
+  background-position: center;
+  background-image: url("../images/products/producto1.jpg"); }
+
+.galleryImage9 {
+  background-size: cover;
+  background-position: center;
+  background-image: url("../images/products/IMG_20210827_114313.jpg"); }
+
+.galleryImage10 {
+  background-size: cover;
+  background-position: center;
+  background-image: url("../images/products/IMG_20210831_132324.jpg"); }
+
+.galleryImage11 {
+  background-size: cover;
+  background-position: center;
+  background-image: url("../images/products/IMG_20210906_125515.jpg"); }
+
+.galleryImage12 {
+  background-size: cover;
+  background-position: center;
+  background-image: url("../images/products/IMG_20210827_165022.jpg"); }
+
+.promotionContainer {
+  display: grid;
+  grid-template-columns: 20vw 60vw 20vw;
+  grid-template-rows: repeat(1, 1fr); }
+  .promotionContainer__Box {
+    background-color: rgba(255, 127, 80, 0.767);
+    border-radius: 10px;
+    margin: 5% 2% 2% 2%;
+    padding-left: 5%;
+    padding-right: 2%;
+    padding-bottom: 3%;
+    padding-top: 3%;
+    transition: linear .2s; }
+    .promotionContainer__Box:first-child {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      width: 60vw; }
+  .promotionContainer__gallery {
+    width: auto;
+    display: flex;
+    margin-top: 4%;
+    margin-bottom: 5%;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 3%; }
+    .promotionContainer__gallery__ImageBox {
+      position: relative;
+      margin: 2%;
+      border-radius: 10px 10px 10px 10px;
+      height: 20vh;
+      width: 20vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      .promotionContainer__gallery__ImageBox__Image {
+        display: block;
+        height: 35vh;
+        max-width: 35vh;
+        transition: .5s ease;
+        border-radius: 10px 10px 10px 10px; }
+        .promotionContainer__gallery__ImageBox__Image__Text {
+          color: white;
+          border-radius: 0 0 20% 20%;
+          position: absolute;
+          top: 30%;
+          left: 10%;
+          -webkit-transform: translate(0, 0);
+          -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
+          text-align: left;
+          transition: linear .2s; }
+          .promotionContainer__gallery__ImageBox__Image__Text p:first-child {
+            font-size: .7em; }
+          .promotionContainer__gallery__ImageBox__Image__Text p:nth-child(2) {
+            font-size: .6em; }
+        .promotionContainer__gallery__ImageBox__Image__overlay {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background-color: rgba(2, 6, 116, 0.678);
+          border-radius: 0 0 10px 10px;
+          overflow: hidden;
+          width: auto;
+          height: 30%;
+          transition: .5s ease; }
+          .promotionContainer__gallery__ImageBox__Image__overlay:hover {
+            overflow: scroll;
+            height: 90%;
+            opacity: 100%; }

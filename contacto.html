@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Contáctate con Runa Joyas para conocer más acerca de nuestros productos."/>
+        <meta name="keywords" content="joyas, plata, La Rioja, aros, colloares, colgantes, pulseras"/>
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    
+        <link rel="stylesheet" href="style/style_sass.css">
+        <link rel="stylesheet" href="style/style.css">
+        
+        <script src="https://kit.fontawesome.com/25607fcacf.js" crossorigin="anonymous"></script>
+        <title>Runa Joyas</title>
+    </head>
+<body>
+    <!--Cabecera de la página. contiene tres elementos: logo, redes y barra de navegación-->
+    <header>
+        <!-- Navbar boostrap -->
+        <nav class="navbar navbar-expand-lg navbar-light navColor">
+            <img src="images/logo.png" alt="Logo" width="100" height="100">
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="index.html">Novedades <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="nosotras.html">Nosotras</a>
+                    <a class="nav-item nav-link" href="productos.html">Galería</a>
+                    <a class="nav-item nav-link" href="promociones.html">En promoción</a>
+                    <a class="nav-item nav-link active" href="contacto.html">Contacto</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- En main se encuentran las tarjetas con  los productos más nuevos o destacados -->
+    <main>
+        <!-- Formulario de contacto y mapa para localizar el local -->
+        <form action="" class="contactForm">
+            <div class="contactFormLabel">
+                <label for="nameLastname">Nombre y Apellido: </label>
+            </div>
+            <div class="nameLastnameInput">
+                <input name="nameLastname" type="text" class="contactFormInputText">
+            </div>
+            <div class="contactFormLabel">
+                <label for="email">Correo electrónico: </label>
+            </div>
+            <div class="nameLastnameInput">
+                <input name="email" type="email" class="contactFormInputText">
+            </div>
+            <div>
+                <label for="interestedIn" class="contactFormLabel">Productos de interés:</label>
+            </div>
+            <div class="nameLastnameInput">
+                
+                <input class="checkboxInput" type="checkbox" id="producto1" name="producto1" value="producto 1"><label for="producto1" class="formCheckboxLabel"> Producto 1</label>
+                <input class="checkboxInput" type="checkbox" id="producto2" name="producto2" value="producto 2"><label for="producto2" class="formCheckboxLabel"> Producto 2</label>
+                <input class="checkboxInput" type="checkbox" id="producto3" name="producto3" value="producto 3"><label for="producto3" class="formCheckboxLabel"> Producto 3</label>
+                <input class="checkboxInput" type="checkbox" id="producto4" name="producto4" value="producto 4"><label for="producto4" class="formCheckboxLabel"> Producto 4</label>
+                <input class="checkboxInput" type="checkbox" id="producto5" name="producto5" value="producto 5"><label for="producto5" class="formCheckboxLabel"> Producto 5</label>
+            </div>
+            <div>
+                <label for="message" class="contactFormLabel">Mensaje:</label></div>
+            <div>
+
+                <textarea name="message" id="" class="contactFormInputText" cols="30" rows="10"></textarea>
+            </div>
+            <div class="buttonsArea">
+                <input type="reset" name="" id="formButtonCleanUp" value="Limpiar" class="button">
+                <input type="submit" name="" id="formButtonSend" value="Enviar" class="button">
+            </div>
+            <!-- <div>
+                <label for="name" class="contactFormLabel">Nombre y appelido:</label>
+                <input type="text" name="name" id="name" class="inputBoxText">
+            </div>            
+            <div>
+                <label for="email" class="contactFormLabel">email:</label>
+                <input type="email" name="email" id="email" class="inputBoxText">
+            </div>
+            <div>
+                <label for="interested_in" class="contactFormLabel">Productos de interés:</label>
+                <input type="checkbox" id="producto1" name="producto1" value="producto 1"><label for="producto1" class="formCheckboxLabel"> Producto 1</label>
+                <input type="checkbox" id="producto2" name="producto2" value="producto 2"><label for="producto2" class="formCheckboxLabel"> Producto 2</label>
+                <input type="checkbox" id="producto3" name="producto3" value="producto 3"><label for="producto3" class="formCheckboxLabel"> Producto 3</label>
+                <input type="checkbox" id="producto4" name="producto4" value="producto 4"><label for="producto4" class="formCheckboxLabel"> Producto 4</label>
+                <input type="checkbox" id="producto5" name="producto5" value="producto 5"><label for="producto5" class="formCheckboxLabel"> Producto 5</label>
+
+            </div>
+            
+            <div>
+                <label for="hearAboutUs" class="contactFormLabel">¿Cómo nos conociste?</label>
+                <select name="hearAboutUs" class="contactFormSelect">
+                    <option value="none"></option>
+                    <option value="buscador">Buscador web</option>
+                    <option value="redes">Redes sociales</option>
+                    <option value="recomendacion">Recomendación de amigo o familiar</option>
+                </select>
+            </div>
+            <div>
+                <input type="reset" name="" id="formButtonCleanUp" value="Limpiar mensaje">
+                <input type="submit" name="" id="formButtonSend" value="Enviar">
+            </div> -->
+        </form>
+    </main>
+    <footer id="footer">
+        <!--El footer contiene tres elementos: los metodos de pago, redes nuevanmente y el boton de whatsapp-->
+
+        <img src="https://imgmp.mlstatic.com/org-img/banners/ar/medios/online/125X125.jpg" 
+        title="Mercado Pago - Medios de pago" alt="Mercado Pago - Medios de pago" 
+        width="125" height="125"/> 
+        
+        <i class="fab fa-whatsapp fa-3x" id="whatsapp"></i>
+        <a href="http://instagram.com/runa_joyaslr/" id="instagram" target="_blank"><i class="fab fa-instagram fa-3x" ></i></a>
+
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    
+</body>
+</html>

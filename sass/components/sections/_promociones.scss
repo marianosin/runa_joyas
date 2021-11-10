@@ -1,0 +1,85 @@
+.promotionContainer {
+    display: grid;
+    grid-template-columns: 20vw 60vw 20vw;
+    grid-template-rows: repeat(1, 1fr);
+    &__Box {
+        background-color: $promociones-background-color;
+        border-radius: 10px;
+        margin: 5% 2% 2% 2%;
+        padding-left: 5%;
+        padding-right: 2%;
+        padding-bottom: 3%;
+        padding-top: 3%;
+        transition: linear .2s;
+        &:first-child {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            width: 60vw;
+            }
+        }
+    &__gallery {
+        width: auto;
+        display: flex;
+        margin-top: 4%;
+        margin-bottom: 5%;
+        justify-content: center;
+        flex-wrap: wrap;
+        row-gap: 3%;
+        &__ImageBox {
+            position: relative;
+            margin: 2%;
+            border-radius: 10px 10px 10px 10px;
+            height: 20vh;
+            width: 20vh;
+            display: flex;
+            flex-direction: column; 
+            justify-content: space-between;
+            &__Image {
+                display: block;
+                height: 35vh;
+                max-width: 35vh;
+                transition: .5s ease;
+                border-radius: 10px 10px 10px 10px;
+                &__Text {
+                    color: white;
+                    border-radius: 0 0 20% 20%;
+                    position: absolute;
+                    top: 30%;
+                    left: 10%;
+                    -webkit-transform: translate(0, 0);
+                    -ms-transform: translate(0, 0);
+                    transform: translate(0, 0);
+                    text-align: left;
+                    transition: linear .2s;
+                    p:first-child {
+                        font-size: .7em;
+                    }
+                    p:nth-child(2) {
+                        font-size: .6em;
+                    }
+                }
+                &__overlay {
+                    position: absolute;
+    
+    
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    background-color: $promociones-overlay-background-color;
+    
+                    border-radius: 0 0 10px 10px;
+                    overflow: hidden;
+                    width: auto;
+                    height: 30%;
+                    transition: .5s ease;
+                &:hover {
+                    overflow: scroll;
+                    height: 90%;
+                    opacity: 100%;
+                }
+                }
+
+            }
+        }
+        }
+    }

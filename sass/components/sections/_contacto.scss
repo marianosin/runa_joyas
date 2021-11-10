@@ -1,0 +1,124 @@
+// En esta sección se respeta el formato anterior y no se aplica nesting ya que no estaba funcionando adecuadamente. Puede ser corregido más adelante, por lo pronto, es funcional.
+
+/* Contact */
+
+.contactForm {
+    background-color: $color-background-form;
+    width:60%;
+    padding: 3%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: left;
+}
+.contactFormLabel {
+    font-family: $contacto-label-font-family;
+    font-size: 20;
+    align-items: center;
+
+}
+
+.contactFormInputText[type=text] {
+    @include contactFormInputText(inline, 10px, 2em,  map-get($contacto-inputs-colors, "background"))
+}
+.contactFormInputText:hover[type=text] , .contactFormInputText:active[type=text], .contactFormInputText:focus[type=text] {
+    margin-top: 10px;
+    border-bottom: 2.5px solid #F4C7AB ;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    
+    height: 2em;
+    background-color: rgba(129, 129, 129, 0.2);
+}
+.contactFormInputText[type=email] {
+    @include contactFormInputText(inline, 10px, 2em,  map-get($contacto-inputs-colors, "background"))
+}
+.contactFormInputText:hover[type=email] , .contactFormInputText:active[type=email], .contactFormInputText:focus[type=email] {
+    margin-top: 10px;
+    border-bottom: 2.5px solid #F4C7AB ;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    height: 2em;
+    background-color: rgba(129, 129, 129, 0.2);
+}
+textarea {
+    @include contactFormInputText(inline, 10px, 2em,  map-get($contacto-inputs-colors, "background"))
+}
+textarea:hover , textarea:active, textarea:focus {
+    margin-top: 10px;
+    border-bottom: $border-bottom-input; ;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    ;
+    height: 6em;
+    background-color: $background-input;
+}
+.checkboxInput[type="checkbox"] {
+    display: inline;
+    
+    border: 1px solid blue;
+
+    background-color: rgba(129, 129, 129, 0.08);
+    transition: all linear .2s;
+}
+.checkboxInput:hover[type="checkbox"] , .checkboxInput:active[type="checkbox"], .checkboxInput:focus[type="checkbox"] {
+
+    border-bottom: 2.5px solid #F4C7AB ;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+
+    background-color: rgba(129, 129, 129, 0.2);
+}
+.nameLastnameInput {
+    margin-bottom: 1%;
+}
+.buttonsArea {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    margin-top: 2%;
+    padding: 2%;
+}
+.buttonsArea input[type="reset"] {
+    border: 0;
+    background-color: #F4C7AB;
+}
+.buttonsArea input[type="submit"] {
+    border: 0;
+    background-color: #F4C7AB;
+}
+
+
+
+/* CSS */
+.button {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    cursor: pointer;
+    border: 3px solid;
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button:active {
+    box-shadow: 0px 0px 0px 0px;
+    top: 5px;
+    left: 5px;
+}
+
+@media (min-width: 768px) {
+  .button {
+    padding: 0.25em 0.75em;
+  }
+}
