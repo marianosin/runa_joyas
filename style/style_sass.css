@@ -132,6 +132,7 @@ nav {
   background-color: rgba(134, 72, 121, 0.5);
   width: 60%;
   padding: 3%;
+  padding-bottom: 5%;
   display: flex;
   flex-flow: column wrap;
   align-items: left; }
@@ -267,10 +268,43 @@ textarea:hover, textarea:active, textarea:focus {
 
 .aboutUsBox {
   padding-top: 3%;
-  width: 60%;
+  width: 100%;
   font-size: 12px;
   text-align: justify;
   font-family: "Times New Roman", Times, serif; }
+
+.containerNosotras {
+  display: flex;
+  flex-flow: row wrap;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  align-items: center;
+  justify-content: space-around; }
+
+.nosotrasImg {
+  border-radius: 50px 50px 50px 50px;
+  width: 60vw;
+  height: auto; }
+
+.imgColNosotras {
+  order: 0; }
+
+.textNosotras {
+  order: 1;
+  padding-left: 2%;
+  width: 100%; }
+
+@media screen and (min-width: 600px) {
+  .containerNosotras {
+    align-items: center;
+    justify-content: center; }
+  .nosotrasImg {
+    width: 20vw;
+    height: auto; }
+  .aboutUsBox {
+    width: 60%; }
+  .textNosotras {
+    width: 40%; } }
 
 .gallery {
   width: 70%;
@@ -316,6 +350,8 @@ textarea:hover, textarea:active, textarea:focus {
         transition: .5s ease; }
       .gallery__ImageBox__Image__Text {
         color: white; }
+        .gallery__ImageBox__Image__Text p {
+          font-size: 9px; }
     .gallery__ImageBox:hover .gallery__ImageBox__Image .gallery__ImageBox__Image__overlay {
       height: 40%;
       opacity: 100%; }
