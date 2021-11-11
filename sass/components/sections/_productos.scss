@@ -48,14 +48,14 @@
             }
             &__Text {
                 color: white;
-                border-radius: 0 0 20% 20%;
-                position: absolute;
-                top: 50%;
+                // border-radius: 0 0 20% 20%;
+                // position: absolute;
+                // top: 50%;
                 
-                -webkit-transform: translate(-90%, -90%);
-                -ms-transform: translate(-90%, -90%);
-                transform: translate(-90%, -90%);
-                text-align: left;
+                // -webkit-transform: translate(-90%, -90%);
+                // -ms-transform: translate(-90%, -90%);
+                // transform: translate(-90%, -90%);
+                // text-align: left;
             }
         }
 // Importa el orden en el que se ponga este anidad, al cambiar overlay e images empezó a funcionar
@@ -82,19 +82,19 @@ Recordar que cada elemento debe tener su contenedor*/
 .galleryImage1 {
     background-size:cover;
     background-position: center;
-    background-image: url('../images/products/producto1.jpg');
+    background-image: url('../images/products/1632688062564.jpg');
 }
 
 .galleryImage2 {
     background-size:cover;
     background-position: center;
-    background-image: url('../images/products/producto2.jpg');
+    background-image: url('../images/products/1632688062655.jpg');
 }
 
 .galleryImage3 {
     background-size:cover;
     background-position: center;
-    background-image: url('../images/products/1632688062518.jpg');
+    background-image: url('../images/products/1632688062846.jpg');
 }
 
 .galleryImage4 {
@@ -106,13 +106,13 @@ Recordar que cada elemento debe tener su contenedor*/
 .galleryImage5 {
     background-size:cover;
     background-position: center;
-    background-image: url('../images/products/1632688062872.jpg');
+    background-image: url('../images/products/1632688062924.jpg');
 }
 
 .galleryImage6 {
     background-size:cover;
     background-position: center;
-    background-image: url('../images/products/1632688062986.jpg');
+    background-image: url('../images/products/IMG_20210827_113656.jpg');
 }
 
 .galleryImage7 {
@@ -124,7 +124,7 @@ Recordar que cada elemento debe tener su contenedor*/
 .galleryImage8 {
     background-size:cover;
     background-position: center;
-    background-image: url('../images/products/producto1.jpg');
+    background-image: url('../images/products/IMG_20210827_164207.jpg');
 }
 
 .galleryImage9 {
