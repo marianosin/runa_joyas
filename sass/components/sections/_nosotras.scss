@@ -1,13 +1,11 @@
-
+// Estilo de página nosotras 
 .aboutUsBox {
-    
     padding-top: 3%;
     width: 100%;
     font-size: 12px;
     text-align: justify;
     font-family: $nosotras-main-font-family;
 }
-
 .containerNosotras {
     display: flex;
     flex-flow: row wrap;
@@ -15,10 +13,8 @@
     padding-bottom: 3%;
     align-items: center;
     justify-content: space-around;
-
 }
 .nosotrasImg {
-
     border-radius: 50px 50px 50px 50px;
     width: 60vw;
     height: auto;
@@ -33,20 +29,16 @@
 }
 @media screen and (min-width: 600px) {
     .containerNosotras {
-
         align-items: center;
         justify-content: center;
-    
     }
     .nosotrasImg {
         width: 20vw;
         height: auto;
     }
     .aboutUsBox {
-
         
         width: 60%;
-
     }
     .textNosotras {
         width: 40%;

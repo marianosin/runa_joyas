@@ -5,20 +5,7 @@
 /*Galeria*/
 /*Promociones*/
 /*Contacto*/
-/*Todo lo que se escribe abajo pisa a lo de arriba*/
-/* Se los puede llamar por clase o por id, pero solo puede haber un id por elemento, en cambio puede haber clases*/
-/* El !important pisa todos los estilos dentro de una clase.
-En este caso por ejemplo
-tengo background y background-color. El segundo es mas importante y para que el primero gane le pongo eso.
-
-Para llamar 2 clases en un mismo elemento es class="clase1 clase2 clase3"
-
-color picker mybrandnewlogo
-
-etiqueta1 mayor li y digo la jerarquia
-*/
-/* Boddy adaptation*/
-/*  General */
+/*  Css general, aplicado a todas las páginas. General */
 /* Fuente para lema */
 @import url("https://fonts.googleapis.com/css2?family=Birthstone&family=Italianno&family=Oxygen:wght@300&family=Source+Serif+Pro:wght@600&display=swap");
 /* Para parrafos */
@@ -29,7 +16,6 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   background-color: #1F1D36;
   padding: 0px;
   margin: 0px;
@@ -127,7 +113,7 @@ nav {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 10px; }
 
-/* Contact */
+/* Estilos de Contacto */
 .contactForm {
   background-color: rgba(134, 72, 121, 0.5);
   width: 60%;
@@ -207,7 +193,7 @@ textarea:hover, textarea:active, textarea:focus {
 
 .checkboxInput[type="checkbox"] {
   display: inline;
-  border: 1px solid blue;
+  border: 1px solid rgba(129, 129, 129, 0.08);
   background-color: rgba(129, 129, 129, 0.08);
   transition: all linear .2s; }
 
@@ -263,8 +249,18 @@ textarea:hover, textarea:active, textarea:focus {
     padding: 0.25em 0.75em; } }
 
 .carouselSize {
-  /* width: 100vw; */
+  align-items: center;
   height: 100vh; }
+
+.contentCarousel {
+  width: 100vw;
+  height: inherit;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  align-content: center; }
+  .contentCarousel img {
+    align-content: center; }
 
 .aboutUsBox {
   padding-top: 3%;
@@ -447,18 +443,22 @@ Recordar que cada elemento debe tener su contenedor*/
     .promotionContainer__gallery__ImageBox {
       position: relative;
       margin: 2%;
-      border-radius: 10px 10px 10px 10px;
-      height: 20vh;
-      width: 20vh;
+      border-radius: 10px 10px 0px 0px;
+      height: 35vh;
+      width: 35vw;
       display: flex;
       flex-direction: column;
       justify-content: space-between; }
       .promotionContainer__gallery__ImageBox__Image {
         display: block;
-        height: 35vh;
-        max-width: 35vh;
+        height: 25vh;
+        max-width: 35vw;
         transition: .5s ease;
-        border-radius: 10px 10px 10px 10px; }
+        border-radius: 10px 10px 0px 0px;
+        transition: linear .2s; }
+        .promotionContainer__gallery__ImageBox__Image:hover {
+          border-radius: 10px 10px 10px 10px;
+          height: 35vh; }
         .promotionContainer__gallery__ImageBox__Image__Text {
           color: white;
           border-radius: 0 0 20% 20%;
@@ -470,10 +470,10 @@ Recordar que cada elemento debe tener su contenedor*/
           transform: translate(0, 0);
           text-align: left;
           transition: linear .2s; }
-          .promotionContainer__gallery__ImageBox__Image__Text p:first-child {
-            font-size: .7em; }
-          .promotionContainer__gallery__ImageBox__Image__Text p:nth-child(2) {
-            font-size: .6em; }
+          .promotionContainer__gallery__ImageBox__Image__Text h3 {
+            font-size: 11px; }
+          .promotionContainer__gallery__ImageBox__Image__Text p {
+            font-size: 9px; }
         .promotionContainer__gallery__ImageBox__Image__overlay {
           position: absolute;
           bottom: 0;
@@ -486,6 +486,6 @@ Recordar que cada elemento debe tener su contenedor*/
           height: 30%;
           transition: .5s ease; }
           .promotionContainer__gallery__ImageBox__Image__overlay:hover {
-            overflow: scroll;
+            overflow: hidden;
             height: 90%;
             opacity: 100%; }

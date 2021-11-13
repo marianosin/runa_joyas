@@ -28,18 +28,23 @@
         &__ImageBox {
             position: relative;
             margin: 2%;
-            border-radius: 10px 10px 10px 10px;
-            height: 20vh;
-            width: 20vh;
+            border-radius: 10px 10px 0px 0px;
+            height: 35vh;
+            width: 35vw;
             display: flex;
             flex-direction: column; 
             justify-content: space-between;
             &__Image {
                 display: block;
-                height: 35vh;
-                max-width: 35vh;
+                height: 25vh;
+                max-width: 35vw;
                 transition: .5s ease;
-                border-radius: 10px 10px 10px 10px;
+                border-radius: 10px 10px 0px 0px;
+                transition: linear .2s;
+                &:hover {
+                    border-radius: 10px 10px 10px 10px;
+                    height: 35vh;
+                }
                 &__Text {
                     color: white;
                     border-radius: 0 0 20% 20%;
@@ -51,12 +56,14 @@
                     transform: translate(0, 0);
                     text-align: left;
                     transition: linear .2s;
-                    p:first-child {
-                        font-size: .7em;
+                    h3 {
+                        font-size: 11px;
                     }
-                    p:nth-child(2) {
-                        font-size: .6em;
+
+                    p {
+                        font-size: 9px;
                     }
+                    
                 }
                 &__overlay {
                     position: absolute;
@@ -73,7 +80,7 @@
                     height: 30%;
                     transition: .5s ease;
                 &:hover {
-                    overflow: scroll;
+                    overflow: hidden;
                     height: 90%;
                     opacity: 100%;
                 }

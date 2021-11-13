@@ -1,20 +1,5 @@
 
-/*Todo lo que se escribe abajo pisa a lo de arriba*/
-/* Se los puede llamar por clase o por id, pero solo puede haber un id por elemento, en cambio puede haber clases*/
-/* El !important pisa todos los estilos dentro de una clase.
-En este caso por ejemplo
-tengo background y background-color. El segundo es mas importante y para que el primero gane le pongo eso.
-
-Para llamar 2 clases en un mismo elemento es class="clase1 clase2 clase3"
-
-color picker mybrandnewlogo
-
-etiqueta1 mayor li y digo la jerarquia
-*/
-/* Boddy adaptation*/
-
-
-/*  General */
+/*  Css general, aplicado a todas las páginas. General */
 
 /* Fuente para lema */
 @import url('https://fonts.googleapis.com/css2?family=Birthstone&family=Italianno&family=Oxygen:wght@300&family=Source+Serif+Pro:wght@600&display=swap');
@@ -29,7 +14,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    
     background-color: $general-background-page;
     padding: 0px;
     margin: 0px;

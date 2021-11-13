@@ -51,17 +51,8 @@
                 p {
                     font-size: 9px;
                 }
-                // border-radius: 0 0 20% 20%;
-                // position: absolute;
-                // top: 50%;
-                
-                // -webkit-transform: translate(-90%, -90%);
-                // -ms-transform: translate(-90%, -90%);
-                // transform: translate(-90%, -90%);
-                // text-align: left;
             }
         }
-// Importa el orden en el que se ponga este anidad, al cambiar overlay e images empezó a funcionar
         &:hover &__Image &__Image__overlay {
             height: 40%;
             opacity: 100%;

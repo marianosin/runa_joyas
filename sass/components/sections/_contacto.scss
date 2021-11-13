@@ -1,6 +1,5 @@
-// En esta sección se respeta el formato anterior y no se aplica nesting ya que no estaba funcionando adecuadamente. Puede ser corregido más adelante, por lo pronto, es funcional.
 
-/* Contact */
+/* Estilos de Contacto */
 
 .contactForm {
     background-color: $color-background-form;
@@ -59,7 +58,7 @@ textarea:hover , textarea:active, textarea:focus {
 .checkboxInput[type="checkbox"] {
     display: inline;
     
-    border: 1px solid blue;
+    border: 1px solid rgba(129, 129, 129, 0.08);
 
     background-color: rgba(129, 129, 129, 0.08);
     transition: all linear .2s;
@@ -119,7 +118,7 @@ textarea:hover , textarea:active, textarea:focus {
 }
 
 @media (min-width: 768px) {
-  .button {
-    padding: 0.25em 0.75em;
-  }
+    .button {
+        padding: 0.25em 0.75em;
+    }
 }

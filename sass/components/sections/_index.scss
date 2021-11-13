@@ -1,4 +1,17 @@
+// Elementos de estilo del index 
+
 .carouselSize {
-    /* width: 100vw; */
+    align-items: center;
     height: 100vh;
+}
+.contentCarousel {
+    width: 100vw;
+    height: inherit;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    align-content: center;
+    img {
+        align-content: center;
+    }
 }
