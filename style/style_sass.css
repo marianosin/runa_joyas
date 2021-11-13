@@ -9,6 +9,16 @@
 /* Fuente para lema */
 @import url("https://fonts.googleapis.com/css2?family=Birthstone&family=Italianno&family=Oxygen:wght@300&family=Source+Serif+Pro:wght@600&display=swap");
 /* Para parrafos */
+@import url("https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap");
+h1 {
+  font-size: 3.5em;
+  font-family: 'Passions Conflict', cursive; }
+
+.pageTitle {
+  margin-left: 4%;
+  background-color: white;
+  display: inline; }
+
 h3 {
   font-family: 'Source Serif Pro', serif; }
 
