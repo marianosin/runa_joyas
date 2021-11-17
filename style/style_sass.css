@@ -1,6 +1,5 @@
 @charset "UTF-8";
-/*GEneral*/
-/*index*/
+/*General*/
 /*Nosotras*/
 /*Galeria*/
 /*Promociones*/
@@ -104,11 +103,9 @@ nav {
   padding-bottom: 1%;
   background-color: white;
   font-size: 11px;
-  font-family: 'Times New Roman', Times, serif;
   display: flex;
   justify-content: center;
-  top: auto;
-  bottom: 2%;
+  bottom: 0px;
   width: 100%; }
 
 #footer p {
@@ -323,7 +320,6 @@ textarea:hover, textarea:active, textarea:focus {
   .gallery__ImageBox {
     position: relative;
     margin: 2%;
-    background-color: blue;
     border-radius: 20px 20px 20px 20px;
     height: 35vh;
     width: 35vh;
@@ -362,8 +358,6 @@ textarea:hover, textarea:active, textarea:focus {
       height: 40%;
       opacity: 100%; }
 
-/* #contenedor de imagen.
-Recordar que cada elemento debe tener su contenedor*/
 /* Imagenes en si */
 .galleryImage1 {
   background-size: cover;

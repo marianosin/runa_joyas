@@ -1,6 +1,4 @@
-
 /*  Css general, aplicado a todas las páginas. General */
-
 /* Fuente para lema */
 @import url('https://fonts.googleapis.com/css2?family=Birthstone&family=Italianno&family=Oxygen:wght@300&family=Source+Serif+Pro:wght@600&display=swap');
 /* Para parrafos */
@@ -10,6 +8,9 @@ h1 {
     font-family: 'Passions Conflict', cursive;
 }
 .pageTitle {
+    width: 100vw;
+    text-align: right;
+    color: rgba(0,0,0,1);
     margin-left: 4%;
     background-color: white;
     display: inline;
@@ -28,18 +29,14 @@ body {
     padding: 0px;
     margin: 0px;
     font-family: 'Oxygen', sans-serif;
-    
 }
 main {
-    
     color: $general-text-color;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    
 }
-
 /* Modificando el navbar de boosttrap*/
 nav {
     text-align: center;
@@ -58,32 +55,23 @@ nav {
         transition: all ease .2s;
         position: relative;
         transition: linear all .2s;
-
         &:hover {
             top: -5px;
-    
             font-size: 1.05em;
         }
     }
 }
-
-
-
 @media screen and (max-width: 860px) {
     .container {
         display: grid;
-    
         grid-auto-rows: auto;
     }
-    
     .product_card {
         margin: 1.5em;
     }
     }
 
 /* Footer y elementos estáticos */
-
-
 #whatsapp {
     display: block;
     position: fixed;
@@ -102,7 +90,6 @@ nav {
 #instagram {
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
     -webkit-background-clip: text;
-    
     background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block; ;
@@ -122,22 +109,16 @@ nav {
     padding-bottom: 1%;
     background-color: $general-background-footer;
     font-size: 11px;
-    font-family: 'Times New Roman', Times, serif;
     display: flex;
+    
     justify-content: center;
-    
-    top: auto;
-    bottom: 2%;
+
+    bottom: 0px;
     width: 100%;
-    
-    
-
 }
-
 #footer p {
     display: block;
 }
-
 .footerText{
     text-align: center;
     margin-top: 0.5%;
