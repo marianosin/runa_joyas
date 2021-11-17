@@ -438,6 +438,15 @@ textarea:hover, textarea:active, textarea:focus {
   }
 }
 
+.tapInfo {
+  background-color: rgba(63, 51, 81, 0.6);
+  text-align: center;
+  position: -webkit-sticky;
+  position: sticky;
+  width: 100%;
+  bottom: 0;
+}
+
 .gallery {
   width: 70%;
   display: -webkit-box;
@@ -589,6 +598,12 @@ textarea:hover, textarea:active, textarea:focus {
   background-size: cover;
   background-position: center;
   background-image: url("../images/products/IMG_20210827_165022.jpg");
+}
+
+@media screen and (min-width: 600px) {
+  .tapInfo {
+    height: 0;
+  }
 }
 
 .promotionContainer {
