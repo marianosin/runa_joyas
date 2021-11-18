@@ -413,7 +413,8 @@ textarea:hover, textarea:active, textarea:focus {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
-  padding-left: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
   width: 100%;
 }
 
