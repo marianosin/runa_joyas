@@ -344,7 +344,7 @@ textarea:hover, textarea:active, textarea:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: auto;
+  height: 60vh;
 }
 
 @media screen and (min-width: 500px) {
