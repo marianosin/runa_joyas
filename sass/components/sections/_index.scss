@@ -1,6 +1,14 @@
 .carouselSize {
+    max-width: 100vw;
     align-items: center;
-    height: 100vh;
+    height: auto;
+}
+
+@media screen and (min-width:500px) {
+    .carouselSize {
+        max-width: 500px;
+
+    }
 }
 
 // Esta clase es de boostrap y debe ser pisada por error en transición de filminas
