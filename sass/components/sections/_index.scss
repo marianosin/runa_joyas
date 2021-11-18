@@ -2,3 +2,9 @@
     align-items: center;
     height: 100vh;
 }
+
+// Esta clase es de boostrap y debe ser pisada por error en transición de filminas
+
+.carousel-item {
+    float: none;
+}

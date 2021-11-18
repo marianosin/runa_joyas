@@ -346,6 +346,10 @@ textarea:hover, textarea:active, textarea:focus {
   height: 100vh;
 }
 
+.carousel-item {
+  float: none;
+}
+
 .aboutUsBox {
   padding-top: 3%;
   width: 100%;
