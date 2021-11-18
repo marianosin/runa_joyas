@@ -9,6 +9,7 @@
     display: flex;
     flex-flow: column wrap;
     align-items: left;
+    z-index: 1;
 }
 .contactFormLabel {
     font-family: $contacto-label-font-family;

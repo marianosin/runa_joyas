@@ -353,28 +353,6 @@ textarea:hover, textarea:active, textarea:focus {
   height: 100vh;
 }
 
-.contentCarousel {
-  width: 100vw;
-  height: inherit;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-}
-
-.contentCarousel img {
-  -ms-flex-line-pack: center;
-      align-content: center;
-}
-
 .aboutUsBox {
   padding-top: 3%;
   width: 100%;
