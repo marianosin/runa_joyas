@@ -3,16 +3,12 @@
     align-items: center;
     height: 60vh;
 }
-
 @media screen and (min-width:500px) {
     .carouselSize {
         max-width: 500px;
-
     }
 }
-
 // Esta clase es de boostrap y debe ser pisada por error en transición de filminas
-
 .carousel-item {
     float: none;
 }

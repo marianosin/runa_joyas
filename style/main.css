@@ -5,15 +5,9 @@
 /*Promociones*/
 /*Contacto*/
 /*  Css general, aplicado a todas las páginas. General */
-/* Fuente para lema */
-/* Para parrafos */
 @import url("https://fonts.googleapis.com/css2?family=Allura&family=Passions+Conflict&display=swap");
 body {
   min-height: 100vh;
-  background-color: white;
-  padding: 0px;
-  margin: 0px;
-  font-family: 'Oxygen', sans-serif;
 }
 
 main {

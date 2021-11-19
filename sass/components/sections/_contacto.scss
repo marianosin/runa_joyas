@@ -1,8 +1,6 @@
-
 /* Estilos de Contacto */
 
 .contactForm {
-    
     background-color: $color-background-form;
     width:60%;
     padding: 3%;
@@ -29,7 +27,6 @@
     border-top: 0;
     border-left: 0;
     border-right: 0;
-    
     height: 2em;
     background-color: rgba(129, 129, 129, 0.2);
 }
@@ -54,25 +51,20 @@ textarea:hover , textarea:active, textarea:focus {
     border-top: 0;
     border-left: 0;
     border-right: 0;
-    ;
     height: 6em;
     background-color: $background-input;
 }
 .checkboxInput[type="checkbox"] {
     display: inline;
-    
     border: 1px solid rgba(129, 129, 129, 0.08);
-
     background-color: rgba(129, 129, 129, 0.08);
     transition: all linear .2s;
 }
 .checkboxInput:hover[type="checkbox"] , .checkboxInput:active[type="checkbox"], .checkboxInput:focus[type="checkbox"] {
-
     border-bottom: 2.5px solid #F4C7AB ;
     border-top: 0;
     border-left: 0;
     border-right: 0;
-
     background-color: rgba(129, 129, 129, 0.2);
 }
 .nameLastnameInput {
