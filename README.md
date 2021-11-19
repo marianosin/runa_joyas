@@ -1,2 +1,2 @@
 # runas_joyas
-Sitio web de emprendimiento familiar. Este sitio está pensado para que el cliente pueda ver los avances de su web con facilidad y en cualquier momento. ACTUALMENTE SE ESTÁ TRABAJANDO EN ÉL.
+Sitio web creado por Mariano Radusky para Runa Joyas. Este sitio web surje como proyecto final del curso de Desarrollo Web impartido por Coderhouse.
