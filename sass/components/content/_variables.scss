@@ -1,8 +1,8 @@
 /*General*/
-$general-background-page: #1F1D36;
+$general-background-page: white;
 $general-bacground-header: white;
 $general-background-footer: white;
-$general-text-color: white;
+$general-text-color: #8E8E8E;
 $general-font-family: 'Oxygen', sans-serif;
 $general-nav-backgraund: white;
 /*Nosotras*/
@@ -13,9 +13,9 @@ $galeria-text-color: white;
 $border-radius-img: 20px 20px 20px 20px;
 $border-radius-overlay: 0 0 20px 20px;
 /*Promociones*/
-$promociones-background-color: rgba(255, 127, 80, 0.767);
+$promociones-background-color: #D8D8D8;
 $promociones-text-color: white;
-$promociones-overlay-background-color: rgba(2, 6, 116, 0.678);
+$promociones-overlay-background-color: rgba(63, 51, 81, 0.6);
 /*Contacto*/
 $contacto-inputs-colors:(
     "bordes":
@@ -28,4 +28,5 @@ $contacto-inputs-colors:(
 $contacto-label-font-family: 'Oxygen', sans-serif;
 $border-bottom-input: 2.5px solid #F4C7AB;
 $background-input: rgba(129, 129, 129, 0.2);
-$color-background-form:rgba(134, 72, 121, 0.5);
+$color-background-form:rgba(63, 51, 81, 0.6);
+$contacto-text-color: white;

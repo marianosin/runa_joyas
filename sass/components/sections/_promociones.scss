@@ -1,6 +1,6 @@
 .promotionContainer {
     display: grid;
-    grid-template-columns: 20vw 60vw 20vw;
+    grid-template-columns: 10vw 80vw 10vw;
     grid-template-rows: repeat(1, 1fr);
     &__Box {
         background-color: $promociones-background-color;
@@ -46,7 +46,7 @@
                     height: 35vh;
                 }
                 &__Text {
-                    color: white;
+                    color: White;
                     border-radius: 0 0 20% 20%;
                     position: absolute;
                     top: 30%;
@@ -57,6 +57,7 @@
                     text-align: left;
                     transition: linear .2s;
                     h3 {
+                        
                         font-size: 11px;
                     }
 

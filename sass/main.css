@@ -6,19 +6,18 @@
 /*Contacto*/
 /*  Css general, aplicado a todas las páginas. General */
 /* Fuente para lema */
-@import url("https://fonts.googleapis.com/css2?family=Birthstone&family=Italianno&family=Oxygen:wght@300&family=Source+Serif+Pro:wght@600&display=swap");
 /* Para parrafos */
-@import url("https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Allura&family=Passions+Conflict&display=swap");
 body {
   min-height: 100vh;
-  background-color: #1F1D36;
+  background-color: white;
   padding: 0px;
   margin: 0px;
   font-family: 'Oxygen', sans-serif;
 }
 
 main {
-  color: white;
+  color: #8E8E8E;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -42,7 +41,7 @@ nav {
   padding-top: 0.5%;
   background-color: white;
   top: 0;
-  font-size: 0.7em;
+  font-size: 0.8rem;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -50,7 +49,7 @@ nav {
 }
 
 nav a {
-  color: white;
+  color: #8E8E8E;
   top: 0;
   -webkit-transition: all ease .2s;
   transition: all ease .2s;
@@ -66,7 +65,7 @@ nav a:hover {
 
 h1 {
   font-size: 3.5em;
-  font-family: 'Passions Conflict', cursive;
+  font-family: 'Allura', cursive;
 }
 
 .pageTitle {
@@ -76,6 +75,10 @@ h1 {
   margin-left: 4%;
   background-color: white;
   display: inline;
+}
+
+h2 {
+  color: #8E8E8E;
 }
 
 h3 {
@@ -165,7 +168,7 @@ h3 {
 
 /* Estilos de Contacto */
 .contactForm {
-  background-color: rgba(134, 72, 121, 0.5);
+  background-color: rgba(63, 51, 81, 0.6);
   width: 60%;
   padding: 3%;
   padding-bottom: 5%;
@@ -183,6 +186,7 @@ h3 {
 }
 
 .contactFormLabel {
+  color: white;
   font-family: "Oxygen", sans-serif;
   font-size: 20;
   -webkit-box-align: center;
@@ -596,14 +600,14 @@ textarea:hover, textarea:active, textarea:focus {
 .promotionContainer {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 20vw 60vw 20vw;
-      grid-template-columns: 20vw 60vw 20vw;
+  -ms-grid-columns: 10vw 80vw 10vw;
+      grid-template-columns: 10vw 80vw 10vw;
   -ms-grid-rows: (1fr)[1];
       grid-template-rows: repeat(1, 1fr);
 }
 
 .promotionContainer__Box {
-  background-color: rgba(255, 127, 80, 0.767);
+  background-color: #D8D8D8;
   border-radius: 10px;
   margin: 2% 2% 2% 2%;
   padding-left: 5%;
@@ -671,7 +675,7 @@ textarea:hover, textarea:active, textarea:focus {
 }
 
 .promotionContainer__gallery__ImageBox__Image__Text {
-  color: white;
+  color: White;
   border-radius: 0 0 20% 20%;
   position: absolute;
   top: 30%;
@@ -696,7 +700,7 @@ textarea:hover, textarea:active, textarea:focus {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(2, 6, 116, 0.678);
+  background-color: rgba(63, 51, 81, 0.6);
   border-radius: 0 0 10px 10px;
   overflow: hidden;
   width: auto;

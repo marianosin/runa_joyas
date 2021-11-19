@@ -2,6 +2,7 @@
 /* Estilos de Contacto */
 
 .contactForm {
+    
     background-color: $color-background-form;
     width:60%;
     padding: 3%;
@@ -12,6 +13,7 @@
     z-index: 1;
 }
 .contactFormLabel {
+    color: $contacto-text-color;
     font-family: $contacto-label-font-family;
     font-size: 20;
     align-items: center;

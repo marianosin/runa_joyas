@@ -1,9 +1,8 @@
 /*  Css general, aplicado a todas las páginas. General */
 /* Fuente para lema */
-@import url('https://fonts.googleapis.com/css2?family=Birthstone&family=Italianno&family=Oxygen:wght@300&family=Source+Serif+Pro:wght@600&display=swap');
-/* Para parrafos */
-@import url('https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap');
 
+/* Para parrafos */
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Passions+Conflict&display=swap');
 body {
     min-height: 100vh;
 
@@ -27,7 +26,7 @@ nav {
     padding-top: 0.5%;
     background-color: white;
     top: 0;
-    font-size: 0.7em;
+    font-size: 0.8rem;
     position: sticky;
     top: 0;
     z-index: 999;
@@ -45,9 +44,10 @@ nav {
 }
 h1 {
     font-size: 3.5em;
-    font-family: 'Passions Conflict', cursive;
+    font-family: 'Allura', cursive;
 }
 .pageTitle {
+
     width: 100vw;
     text-align: right;
     color: rgba(0,0,0,1);
@@ -55,7 +55,9 @@ h1 {
     background-color: white;
     display: inline;
 }
-
+h2 {
+    color: #8E8E8E;
+}
 h3 {
     font-family: 'Source Serif Pro', serif;
 }
